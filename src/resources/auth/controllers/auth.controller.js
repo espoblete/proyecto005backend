@@ -41,6 +41,9 @@ export const login = async ( req, res ) => {
     return res.status( 404 ).json( { status: 'ERROR', details: 'user not found' } )
   }
 
+
+
+  
   // si pasa correctamente, Generamos el token con el payload (info que pasa al token)
   const payload = {
     id: userFound._id,
